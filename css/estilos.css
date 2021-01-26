@@ -1,0 +1,262 @@
+/*variables*/
+header {
+  background: #E6E3E3; }
+
+header, footer, article, nav, aside {
+  padding: 1rem; }
+
+.div__h3 {
+  color: black;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: "Prata", sans-serif; }
+
+/*menu*/
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #E6E3E3; }
+
+#menu {
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Prata", sans-serif;
+  background-color: #E6E3E3; }
+
+/*para el breadcrumb*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background: #E6E3E3;
+  border-radius: 0.25rem;
+  text-align: center; }
+
+/*aca empieza grids para juca.html*/
+#grilla {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-areas: "header header" "header header" "imagenCocinera descripcionImagenCocinera" "imagenActivismo descripcionImagenActivismo" "frase frase" "instagram instagram" "spotify spotify"  "footer footer";
+  grid-template-rows: repeat 8, 200px;
+  grid-template-columns: repeat 2, 50%;
+  grid-column-gap: 10px;
+  /*hace que haya espacio entre columnas*/
+  grid-row-gap: 15px;
+  /*hace q haya espacio entre filas*/ }
+
+header {
+  grid-area: header; }
+
+img {
+  grid-area: imagenCocinera; }
+
+p {
+  grid-area: descripcionImagenCocinera; }
+
+img {
+  grid-area: imagenActivismo; }
+
+p {
+  grid-area: descripcionImagenActivismo; }
+
+p {
+  grid-area: frase; }
+
+div blockquote {
+  grid-area: instagram; }
+
+div iframe {
+  grid-area: spotify; }
+
+footer {
+  grid-area: footer; }
+
+/*bucle para las filas de juca.html*/
+.filas-1 {
+  width: 1em; }
+
+.filas-2 {
+  width: 2em; }
+
+.filas-3 {
+  width: 3em; }
+
+.filas-4 {
+  width: 4em; }
+
+.filas-5 {
+  width: 5em; }
+
+.filas-6 {
+  width: 6em; }
+
+.filas-7 {
+  width: 7em; }
+
+.body__parrafo {
+  color: #EBE946;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Oxygen', sans-serif; }
+
+/*para hacerlo responsive*/
+@media (max-width: 576px) {
+  .body__parrafo {
+    font-size: 7px;
+    font-weight: bolder; } }
+
+@media (min-width: 992px) {
+  .body__parrafo {
+    font-size: 20px;
+    font-weight: normal; } }
+
+/*aca empiezan las transf y animaciones*/
+p.body__parrafo {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+footer {
+  background: #E6E3E3; }
+
+header, footer, article, nav, aside {
+  padding: 1rem; }
+
+.body__footer {
+  text-align: right;
+  color: #908e8e; }
+
+/*para hacerlo responsive*/
+@media (max-width: 576px) {
+  .body__footer {
+    font-size: 7px;
+    font-weight: bolder; } }
+
+@media (min-width: 992px) {
+  .body__footer {
+    font-size: 15px;
+    font-weight: normal; } }
+
+/* aca empieza el formulario de "contacto.html"*/
+form {
+  background-color: #F3CFCF; }
+
+.tituloFormDeContacto {
+  font-family: "Prata", sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: left; }
+
+.formDeContacto {
+  font-family: "Prata", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left; }
+
+input {
+  width: 200px;
+  height: 20px;
+  transition: all 2s; }
+
+input:focus {
+  width: 300px;
+  height: 30px;
+  font-size: 12px; }
+
+textarea {
+  background-color: white;
+  color: black; }
+
+textarea:focus {
+  color: #E6E3E3; }
+
+.botonesForm {
+  font-family: "Prata", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; }
+
+/*variable*/
+select {
+  background-color: #E6E3E3; }
+
+.titulosDelCuadro {
+  font-family: "Prata", sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-align: center; }
+
+.productosDelCuadro {
+  font-family: "Prata", sans-serif;
+  text-align: center;
+  font-size: 16px; }
+
+.itemsDelCuadro {
+  font-family: "Prata", sans-serif;
+  line-height: 1.5;
+  color: #217C27;
+  font-size: 16px; }
+
+.smashedCookies-imagen {
+  background-image: url("imagenes/smashedCookies.jpg"); }
+
+.pastaFlora-imagen {
+  background-image: url("imagenes/pastaFlora.jpg"); }
+
+.leBrownieJames-imagen {
+  background-image: url("imagenes/leBrownieJames.jpg"); }
